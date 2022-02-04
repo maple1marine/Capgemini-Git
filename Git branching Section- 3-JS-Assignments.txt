@@ -1,0 +1,87 @@
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git branch js-assignments
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git add file1.js
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git commit -m "committing js file"
+[master d49a04a] comitting js file
+ 1 file changed, 20 insertions(+)
+ create mode 100244 Desktop/Assignments/file1.css
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ echo -e "this is section 3 of git branching section">>README.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git add README.txt
+warning: LF will be replaced by CRLF in Desktop/Assignments/README.txt.
+The file will have its original line endings in your working directory
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git commit -m "Line 1 of README file is changed"
+[js-assignments dc71b83] Line 1 of README file is changed
+ 1 file changed, 1 insertion(+)
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ echo -e "this is section 3 of git branching last two were over ">>README.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git add README.txt
+warning: LF will be replaced by CRLF in Desktop/Assignments/README.txt.
+The file will have its original line endings in your working directory
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git commit -m "Line 2 of README file is changed on master branch"
+[master 1605595] Line 2 of README file is changed on master branch
+ 1 file changed, 1 insertion(+)
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git checkout js-assignments
+Switched to branch 'js-assignments'
+M       abcd.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ echo -e "this is section 3 of git branching section and almost completed ">>README.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git add README.txt
+warning: LF will be replaced by CRLF in Desktop/Assignments/README.txt.
+The file will have its original line endings in your working directory
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git commit -m "files have been changed on js-assignments branch"
+[js-assignments 162b1a2] files have been changed on js-assignments branch
+ 1 file changed, 1 insertion(+)
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (js-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git merge js-assignments
+Auto-merging Desktop/Assignments/README.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git merge html-assignments
+Merge made by the 'recursive' strategy.
+ Desktop/Assignments/index.html 
+ 2 file changed, 4 insertions(+)
+ create mode 10022 Desktop/Assignments/file1.js
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ ls
+'Git branching Section- 2-CSS-Assignments.txt'   README.txt   abcd.txt   file1.js index.html
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git branch -d Js-assignments
+Deleted branch Js-assignments (was 182a1d2).
+
+
