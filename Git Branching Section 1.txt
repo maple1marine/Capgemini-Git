@@ -93,5 +93,7 @@ Merge made by the 'recursive' strategy.
  create mode 100644 Desktop/Assignments/index.html
 
 HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
-$
+$ git branch -d html-assignments
+Deleted branch html-assignments (was 29a88c2).
+
 
