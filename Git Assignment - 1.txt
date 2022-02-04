@@ -1,0 +1,141 @@
+C:\WINDOWS\system32> cd C:\Users\HP
+
+C:\Users\HP>cd project_dir
+
+C:\Users\HP\project_dir>git init
+Reinitialized existing Git repository in C:/Users/HP/project_dir/.git/
+
+C:\Users\HP\project_dir>nul> index.html
+Access is denied.
+
+C:\Users\HP\project_dir>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\HP\project_dir>git commit -m "First Change"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\HP\project_dir>git add index.html
+
+C:\Users\HP\project_dir>git commit -m "First Change"
+[master (root-commit) 8e773e0] First Change
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+C:\Users\HP\project_dir>git remote add originhttps://github.com/maple1marine/Capgemini-Git.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+C:\Users\HP\project_dir>git remote add origin https://github.com/maple1marine/Capgemini-Git.git
+
+C:\Users\HP\project_dir>git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+C:\Users\HP\project_dir> git push --set-upstream origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 222 bytes | 55.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/maple1marine/Capgemini-Git.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+C:\Users\HP\project_dir>git push
+Everything up-to-date
+
+C:\Users\HP\project_dir>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\HP\project_dir>git add index.html
+
+C:\Users\HP\project_dir>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\HP\project_dir>git push
+Everything up-to-date
+
+C:\Users\HP\project_dir>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+
+C:\Users\HP\project_dir>git add index.html
+
+C:\Users\HP\project_dir>git commit -m "second Change"
+[master 17e6ce3] second Change
+ 1 file changed, 11 insertions(+)
+
+C:\Users\HP\project_dir>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 343 bytes | 68.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/maple1marine/Capgemini-Git.git
+   8e773e0..17e6ce3  master -> master
+
+C:\Users\HP\project_dir>git reset index.html
+
+C:\Users\HP\project_dir>git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\HP\project_dir>git add index.html
+
+C:\Users\HP\project_dir>git commit -m "reverted change"
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+C:\Users\HP\project_dir>git push
+Everything up-to-date
