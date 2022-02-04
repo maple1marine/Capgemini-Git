@@ -1,0 +1,97 @@
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop (master)
+$ touch Assignmwnta
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop (master)
+$ mkdir Assignments
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop (master)
+$ cd Assignments
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ touch README.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ echo -e 'This is Section 1 of git branching' >>README.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git add README.txt
+warning: LF will be replaced by CRLF in Desktop/Assignments/README.txt.
+The file will have its original line endings in your working directory
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git commit -m "Commiting Section1 Readme file"
+[master 6378376] Commiting Section1 Readme file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Desktop/Assignments/README.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git branch html-assignments
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git add index.html
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git commit -m "Commiting Html- Assignments"
+[html-assignments 8f2e33c] Commiting Html- Assignments
+ 1 file changed, 11 insertions(+)
+ create mode 100644 Desktop/Assignments/index.html
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git add index.html
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git commit -m "Commiting Html- Assignments second time"
+[html-assignments 542e85d] Commiting Html- Assignments second time
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ echo -e 'This is about Html-Assignments section ' >>README.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git add README.txt
+warning: LF will be replaced by CRLF in Desktop/Assignments/README.txt.
+The file will have its original line endings in your working directory
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git commit -m "Html- Assignment is commited"
+[master d59af9b] Html- Assignment is commited
+ 1 file changed, 1 insertion(+)
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git add index.html
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git commit -m "Html- Assignment is commited"
+[html-assignments 29a88c2] Html- Assignment is commited
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+M       abcd.txt
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$ git merge html-assignments
+Merge made by the 'recursive' strategy.
+ Desktop/Assignments/index.html | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 Desktop/Assignments/index.html
+
+HP@LAPTOP-SGT2C5ER MINGW64 ~/Desktop/Assignments (master)
+$
+
